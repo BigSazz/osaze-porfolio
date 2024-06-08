@@ -8,12 +8,15 @@ interface SocialsProps {
 }
 
 const socials = [
-  { icon: <FaGithub />, path: "" },
-  { icon: <FaLinkedin />, path: "" },
+  { icon: <FaGithub />, path: "https://www.github.com/bigsazz" },
+  {
+    icon: <FaLinkedin />,
+    path: "https://www.linkedin.com/in/osaze-oviawe-a8b4345a",
+  },
   // { icon: <FaYoutube />, path: "" },
   {
     icon: <FaTwitter />,
-    path: "",
+    path: "https://www.twitter.com/iamsazzy",
   },
 ];
 

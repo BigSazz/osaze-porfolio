@@ -37,7 +37,7 @@ export const Stats = () => {
                   end={stat.num}
                   duration={5}
                   delay={2}
-                  className="text-4xl xl:text-6xl font-extrabold"
+                  className="text-3xl xl:text-6xl font-extrabold"
                 />
                 <p
                   className={cn(
