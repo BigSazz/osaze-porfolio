@@ -14,9 +14,9 @@ const services = [
   },
   {
     num: "02",
-    title: "UI/UX Design",
+    title: "API Integration",
     description:
-      "Creating intuitive and visually appealing user interfaces, focusing on user-centered design principles.",
+      "Integrating third-party APIs to enhance functionality, ensuring secure and efficient data communication.",
     href: "",
   },
   {
