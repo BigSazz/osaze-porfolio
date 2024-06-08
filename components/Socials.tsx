@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { FaGithub, FaLinkedin, FaYoutube, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 interface SocialsProps {
   containerStyles?: string;
@@ -13,7 +13,6 @@ const socials = [
     icon: <FaLinkedin />,
     path: "https://www.linkedin.com/in/osaze-oviawe-a8b4345a",
   },
-  // { icon: <FaYoutube />, path: "" },
   {
     icon: <FaTwitter />,
     path: "https://www.twitter.com/iamsazzy",
