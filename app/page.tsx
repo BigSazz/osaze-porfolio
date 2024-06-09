@@ -5,6 +5,7 @@ import { FiDownload } from "react-icons/fi";
 import { Socials } from "@/components/Socials";
 import { Photo } from "@/components/Photo";
 import { Stats } from "@/components/Stats";
+import Link from "next/link";
 
 const Home = () => {
   return (
@@ -19,8 +20,8 @@ const Home = () => {
               <span className="text-accent">Osaze Oviawe</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/70">
-              I excel at crafting elegant digital experiences and I am
-              proficient in various programming languages and technologies.
+              I specialize in crafting elegant digital experiences and possess
+              proficiency in diverse programming languages and technologies.
             </p>
             {/*btn & socials*/}
             <div className="flex flex-col xl:flex-row items-center gap-8">
@@ -29,7 +30,9 @@ const Home = () => {
                 size="lg"
                 className="uppercase flex items-center gap-2"
               >
-                <span>Download CV</span>
+                <Link href="/assets/Osaze-Oviawe-Resume-2024.pdf">
+                  <span>Download CV</span>
+                </Link>
                 <FiDownload className="size-4" />
               </Button>
               <div className="mb-8 xl:mb-0">
