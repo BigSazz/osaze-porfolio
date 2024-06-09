@@ -19,7 +19,7 @@ import { motion } from "framer-motion";
 const about = {
   title: "About Me",
   description:
-    "I am a full-stack developer with a passion for creating beautiful and functional web applications.",
+    "I am a frontend developer with a passion for creating beautiful and functional web applications.",
   info: [
     { fieldName: "Name", filedValue: "Osaze Oviawe" },
     { fieldName: "Phone", filedValue: "+2348025546910" },
