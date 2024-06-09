@@ -9,16 +9,20 @@ const stats = [
     text: "+ Years of Experience",
   },
   {
-    num: 10,
-    text: "Projects Completed",
+    num: 6,
+    text: "+ Projects Completed",
   },
-  {
-    num: 8,
-    text: "Technologies Mastered",
-  },
+  // {
+  //   num: 8,
+  //   text: "Technologies Mastered",
+  // },
   {
     num: 4000,
     text: "+ Git Commits",
+  },
+  {
+    num: 500,
+    text: "+ Cups of Coffee",
   },
 ];
 
