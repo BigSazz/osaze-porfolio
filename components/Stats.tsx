@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 const stats = [
   {
     num: 4,
-    text: "Years of Experience",
+    text: "+ Years of Experience",
   },
   {
     num: 10,
@@ -18,7 +18,7 @@ const stats = [
   },
   {
     num: 4000,
-    text: "Git Commits",
+    text: "+ Git Commits",
   },
 ];
 

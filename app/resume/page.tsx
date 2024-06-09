@@ -1,8 +1,25 @@
 "use client";
 
-import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs } from "react-icons/fa";
+import {
+  FaHtml5,
+  FaCss3,
+  FaJs,
+  FaReact,
+  FaNodeJs,
+  FaGithub,
+  FaBriefcase,
+  FaGraduationCap,
+  FaTools,
+  FaUser,
+} from "react-icons/fa";
 
-import { SiTailwindcss, SiNextdotjs, SiGraphql } from "react-icons/si";
+import {
+  SiTailwindcss,
+  SiNextdotjs,
+  SiGraphql,
+  SiTypescript,
+  SiRedux,
+} from "react-icons/si";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
@@ -17,9 +34,11 @@ import { motion } from "framer-motion";
 
 // About data
 const about = {
+  icon: <FaUser />,
   title: "About Me",
   description:
     "I am a frontend developer with a passion for creating beautiful and functional web applications.",
+  goal: "Aspiring to work on more innovative projects that challenge my skills and contribute to impactful digital experiences.",
   info: [
     { fieldName: "Name", filedValue: "Osaze Oviawe" },
     { fieldName: "Phone", filedValue: "+2348025546910" },
@@ -33,7 +52,7 @@ const about = {
 
 // experience data
 const experience = {
-  icon: "/assets/resume/badge.svg",
+  icon: <FaBriefcase />,
   title: "My Experience",
   description:
     "I bring over 4 years of expertise as a Frontend Developer, focusing on React and Next.js to create user-centric web applications. With a proven track record in enhancing user experiences and optimizing website performance, I excel in collaborating with cross-functional teams to deliver scalable solutions. Here are highlights from my journey:",
@@ -58,7 +77,7 @@ const experience = {
 
 // education data
 const education = {
-  icon: "/assets/resume/cap.svg",
+  icon: <FaGraduationCap />,
   title: "My Education",
   description:
     "I have pursued formal education in the field of Accounting, complemented by various certifications in web development. Below are the details of my academic qualifications and relevant certifications:",
@@ -78,6 +97,7 @@ const education = {
 
 // skills data
 const skills = {
+  icon: <FaTools />,
   title: "My Skills",
   description:
     "I have acquired a diverse set of technical skills through hands-on experience and continuous learning. I am proficient in the following technologies and tools:",
@@ -93,6 +113,10 @@ const skills = {
     {
       name: "JavaScript",
       icon: <FaJs />,
+    },
+    {
+      name: "TypeScript",
+      icon: <SiTypescript />,
     },
     {
       name: "React",
@@ -113,6 +137,14 @@ const skills = {
     {
       name: "GraphQL",
       icon: <SiGraphql />,
+    },
+    {
+      name: "Redux",
+      icon: <SiRedux />,
+    },
+    {
+      name: "GitHub",
+      icon: <FaGithub />,
     },
   ],
 };
@@ -217,7 +249,7 @@ const Resume = () => {
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {skills.description}
                 </p>
-                <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:gap-[30px]">
+                <ul className="grid grid-cols-2 md:grid-cols-4 gap-4 xl:gap-[30px]">
                   {skills.skillList.map((skill, idx) => {
                     return (
                       <li key={idx}>
@@ -247,9 +279,14 @@ const Resume = () => {
             >
               <div className="flex flex-col gap-[30px]">
                 <h3 className="text-4xl font-bold">{about.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
-                  {about.description}
-                </p>
+                <div className="flex flex-col gap-2">
+                  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                    {about.description}
+                  </p>
+                  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                    {about.goal}
+                  </p>
+                </div>
                 <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
                   {about.info.map((info, idx) => {
                     return (

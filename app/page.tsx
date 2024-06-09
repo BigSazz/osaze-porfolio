@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
+import { FaCode } from "react-icons/fa6";
 
 // Components
 import { Socials } from "@/components/Socials";
@@ -14,14 +15,24 @@ const Home = () => {
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           {/*My introduction*/}
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-xl">Software Developer</span>
+            <span className="text-xl">
+              Software Developer
+              <FaCode className="text-accent size-6 inline-block ml-2" />
+            </span>
             <h1 className="h1 mb-6">
-              Hello I&apos;m <br />{" "}
+              Hello, I&apos;m <br />{" "}
               <span className="text-accent">Osaze Oviawe</span>
             </h1>
-            <p className="max-w-[500px] mb-9 text-white/70">
-              I specialize in crafting elegant digital experiences and possess
-              proficiency in diverse programming languages and technologies.
+            <p className="max-w-[500px] mb-4 text-white/60">
+              I specialize in building and optimizing user-centric web
+              applications with over 4 years of experience in React and Next.js.
+              I have a strong track record of improving user experiences and
+              website performance.
+            </p>
+            <p className="max-w-[500px] mb-9 text-white/60">
+              Passionate about creating impactful digital solutions and
+              enhancing user experiences through innovative front-end
+              development.
             </p>
             {/*btn & socials*/}
             <div className="flex flex-col xl:flex-row items-center gap-8">
