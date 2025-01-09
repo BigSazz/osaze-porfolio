@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 
 const stats = [
   {
-    num: 4,
+    num: 5,
     text: "+ Years of Experience",
   },
   {

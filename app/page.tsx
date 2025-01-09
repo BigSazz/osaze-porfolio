@@ -25,7 +25,7 @@ const Home = () => {
             </h1>
             <p className="max-w-[500px] mb-4 text-white/60">
               I specialize in building and optimizing user-centric web
-              applications with over 4 years of experience in React and Next.js.
+              applications with over 5 years of experience in React and Next.js.
               I have a strong track record of improving user experiences and
               website performance.
             </p>
@@ -41,7 +41,7 @@ const Home = () => {
                 size="lg"
                 className="uppercase flex items-center gap-2"
               >
-                <Link href="/assets/Osaze-Oviawe-Resume-2024.pdf">
+                <Link href="/assets/Osaze-Oviawe-Resume-2025.pdf">
                   <span>Download CV</span>
                 </Link>
                 <FiDownload className="size-4" />

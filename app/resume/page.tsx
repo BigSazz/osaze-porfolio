@@ -41,8 +41,8 @@ const about = {
   goal: "Aspiring to work on more innovative projects that challenge my skills and contribute to impactful digital experiences.",
   info: [
     { fieldName: "Name", filedValue: "Osaze Oviawe" },
-    { fieldName: "Phone", filedValue: "+2348025546910" },
-    { fieldName: "Experience", filedValue: "4+ Years" },
+    { fieldName: "Phone", filedValue: "+234 802 554 6910" },
+    { fieldName: "Experience", filedValue: "5+ Years" },
     { fieldName: "Nationality", filedValue: "Nigerian" },
     { fieldName: "Email", filedValue: "osaze.o.oviawe@gmail.com" },
     { fieldName: "Freelance", filedValue: "Available" },
@@ -55,22 +55,31 @@ const experience = {
   icon: <FaBriefcase />,
   title: "My Experience",
   description:
-    "I bring over 4 years of expertise as a Frontend Developer, focusing on React and Next.js to create user-centric web applications. With a proven track record in enhancing user experiences and optimizing website performance, I excel in collaborating with cross-functional teams to deliver scalable solutions. Here are highlights from my journey:",
+    "I bring over 5 years of expertise as a Frontend Developer, focusing on React and Next.js to create user-centric web applications. With a proven track record in enhancing user experiences and optimizing website performance, I excel in collaborating with cross-functional teams to deliver scalable solutions. Here are highlights from my journey:",
   items: [
     {
       company: "Sendbox Software Technologies",
       position: "Frontend Developer",
       duration: "2020 - Present",
+      type: "Full-time",
+    },
+    {
+      company: "Conjure",
+      position: "Frontend Developer",
+      duration: "2024 - 2025",
+      type: "Contract",
     },
     {
       company: "EverySell",
       position: "Frontend Developer",
       duration: "2021 - 2022",
+      type: "Contract",
     },
     {
       company: "Microsmart Solutions Ltd",
       position: "Frontend Developer",
       duration: "2019 - 2020",
+      type: "Full-time",
     },
   ],
 };
@@ -156,7 +165,7 @@ const Resume = () => {
       animate={{
         opacity: 1,
         transition: {
-          delay: 2.4,
+          delay: 0.4,
           duration: 0.4,
           ease: "easeIn",
         },
@@ -184,21 +193,25 @@ const Resume = () => {
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {experience.description}
                 </p>
-                <ScrollArea className="h-[400px]">
+                <ScrollArea className="h-[450px]">
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {experience.items.map((item, idx) => {
                       return (
                         <li
                           key={idx}
-                          className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                          className="bg-[#232329] h-[200px] py-10 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
                         >
-                          <span className="text-accent">{item.duration}</span>
-                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
-                            {item.position}
-                          </h3>
+                          <>
+                            <span className="text-accent">{item.duration}</span>
+                            <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
+                              {item.position}
+                            </h3>
+                          </>
                           <div className="flex items-center gap-3">
                             <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                            <p className="text-white/60">{item.company}</p>
+                            <p className="text-white/60">
+                              {item.company} - {item.type}
+                            </p>
                           </div>
                         </li>
                       );
