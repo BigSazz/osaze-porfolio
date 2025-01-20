@@ -16,6 +16,7 @@ import {
 
 import { FaPhoneAlt, FaEnvelope, FaMapMarkedAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const info = [
   {
@@ -53,49 +54,57 @@ const Contact = () => {
         <div className="flex flex-col xl:flex-row gap-[30px]">
           {/*form*/}
           <div className="xl:w-[54%] order-2 xl:order-none">
-            <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
-              <h3 className="text-4xl text-accent">Let&apos;s work together</h3>
+            <form
+              action="https://formsubmit.co/osaze.o.oviawe@gmail.com"
+              method="POST"
+              className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl"
+            >
+              <h3 className="text-4xl text-accent">Got an Exciting Project?</h3>
               <p className="text-white/60">
-                I am available for freelance or full-time work. Connect with me
-                via the form below.
+                Let&apos;s connect! I&apos;m open to chatting about contract or
+                full-time opportunities that align with my skills. Let&apos;s
+                hop on a call and explore how we can work together!
               </p>
               {/*input*/}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Input type="firstname" placeholder="Firstname" />
-                <Input type="lastname" placeholder="Lastname" />
-                <Input type="email" placeholder="Email address" />
-                <Input type="phone" placeholder="Phone number" />
-              </div>
-              {/*select*/}
-              <Select>
-                <SelectTrigger className="w-full">
-                  <SelectValue placeholder="Select a service" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectGroup>
-                    <SelectLabel>Select a services</SelectLabel>
-                    <SelectItem value="web_development">
-                      Web Development
-                    </SelectItem>
-                    <SelectItem value="api_integration">
-                      Api Integration
-                    </SelectItem>
-                    <SelectItem value="e_commerce">E-Commerce</SelectItem>
-                    <SelectItem value="wed_performance_optimizationo">
-                      Web Performance Optimization
-                    </SelectItem>
-                  </SelectGroup>
-                </SelectContent>
-              </Select>
-              {/*textarea*/}
-              <Textarea
-                className="h-[200px]"
-                placeholder="Type your message here."
-              />
+              {/*<div className="grid grid-cols-1 md:grid-cols-2 gap-6">*/}
+              {/*  <Input type="firstname" placeholder="Firstname" />*/}
+              {/*  <Input type="lastname" placeholder="Lastname" />*/}
+              {/*  <Input type="email" placeholder="Email address" />*/}
+              {/*  <Input type="phone" placeholder="Phone number" />*/}
+              {/*  <input type="hidden" name="_captcha" value="false" />*/}
+              {/*</div>*/}
+              {/*/!*select*!/*/}
+              {/*<Select>*/}
+              {/*  <SelectTrigger className="w-full">*/}
+              {/*    <SelectValue placeholder="Select a service" />*/}
+              {/*  </SelectTrigger>*/}
+              {/*  <SelectContent>*/}
+              {/*    <SelectGroup>*/}
+              {/*      <SelectLabel>Select a services</SelectLabel>*/}
+              {/*      <SelectItem value="web_development">*/}
+              {/*        Web Development*/}
+              {/*      </SelectItem>*/}
+              {/*      <SelectItem value="api_integration">*/}
+              {/*        Api Integration*/}
+              {/*      </SelectItem>*/}
+              {/*      <SelectItem value="e_commerce">E-Commerce</SelectItem>*/}
+              {/*      <SelectItem value="wed_performance_optimizationo">*/}
+              {/*        Web Performance Optimization*/}
+              {/*      </SelectItem>*/}
+              {/*    </SelectGroup>*/}
+              {/*  </SelectContent>*/}
+              {/*</Select>*/}
+              {/*/!*textarea*!/*/}
+              {/*<Textarea*/}
+              {/*  className="h-[200px]"*/}
+              {/*  placeholder="Type your message here."*/}
+              {/*/>*/}
               {/*button*/}
-              <Button size="md" className="max-w-40">
-                Send message
-              </Button>
+              <Link href={"https://calendly.com/osaze-o-oviawe/30min"}>
+                <Button size="md" className="max-w-60">
+                  Book a meeting
+                </Button>
+              </Link>
             </form>
           </div>
           {/*contact info*/}

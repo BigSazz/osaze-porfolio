@@ -20,8 +20,8 @@ const Home = () => {
               <FaCode className="text-accent size-6 inline-block ml-2" />
             </span>
             <h1 className="h1 mb-6">
-              Hello, I&apos;m <br />{" "}
-              <span className="text-accent">Osaze Oviawe</span>
+              Hi, <br />{" "}
+              <span className="text-5xl text-accent">I&apos;m Osaze</span>
             </h1>
             <p className="max-w-[500px] mb-4 text-white/60">
               I specialize in building and optimizing user-centric web
@@ -41,7 +41,7 @@ const Home = () => {
                 size="lg"
                 className="uppercase flex items-center gap-2"
               >
-                <Link href="/assets/Osaze-Oviawe-Resume-2025.pdf">
+                <Link href="/assets/Osaze-Oviawe-2025.pdf">
                   <span>Download CV</span>
                 </Link>
                 <FiDownload className="size-4" />

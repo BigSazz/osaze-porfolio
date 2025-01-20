@@ -9,7 +9,7 @@ export const Logo = () => {
       <Link href="/" className="flex items-center justify-center gap-1">
         <FaLaptopCode className="text-accent size-8 inline-block ml-2" />
         <h1 className="text-4xl font-semibold">
-          Osaze<span className="text-accent">.</span>
+          Saz<span className="text-accent">.</span>
         </h1>
       </Link>
     </>
